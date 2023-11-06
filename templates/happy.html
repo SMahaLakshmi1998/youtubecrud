@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/home.css">
+    <title>video player</title>
+    <style>
+        .main{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="static/3line.jpg" class="menu-icon">
+            <img src="static/youtube.jpg" class="logo">
+    
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box">
+                <input type="text" placeholder="search">
+                <img src="static//magnifier.jpg" alt="">
+            </div>
+            <img src="static//mic.jpg" class="mic-icon">
+        </div>
+        <div class="nav-right flex-div">
+            <img src="static//video.jpg" >
+            <img src="static//saveimage.jpg">
+            <img src="static//bell.jpg" >
+            <img src="static//men.png" class="user-icon">
+        </div>
+    </nav>
+    <div class="main">
+    <section>
+       <div class="container play_container">
+        <div class="row">
+
+            <div class="play-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{datas.videos}}"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+               encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              
+            
+               
+        
+            <div class="tags">
+                <a href="#">#coding</a>
+                <a href="#">#javascript</a>
+                <a href="#">#FullStackDeveopment</a>
+                <a href="#">#HappyStudents</a>
+            </div><br>
+            
+            <div class="play-video-info">
+                <p>1M views &bull; 2days ago</p>
+                <div>
+                    <a href="#"><img src="static//like.png">125</a>
+                    <a href="#"><img src="static//dislike.jpg">125</a>
+                    <a href="#"><img src="static//share.jpg">125</a>
+                    <a href="#"><img src="static//saved.png">125</a>
+                </div>
+                <hr>
+
+            </div>
+
+        </div>
+        </div>
+       </div>    
+       <div class="publisher">
+        <img src="static//surya.jpg" alt="">
+        <div>
+        <p>Happy Students</p>
+        <span>500k Subscribers</span>
+        </div>
+    <button type="button">Subscribe</button>
+    </div>
+    <div class="vid-description">
+        <p>This is a channel focused  on building Tech video</p>
+        <p>This is to help Learners to learn stuff easily</p>
+        <hr>
+        <h4>150 Comments</h4>
+    </div>
+    <div class="add-comment">
+        <img src="static//vijay.jpg" alt="">
+        <input type="text" placeholder="write the comments......">
+    </div>
+    <div class="old-comments">
+        <img src="static//vikram.jpg" alt="">
+        <div>
+        <h3>Gerand <span> 3days ago</span></h3>
+        <p>This is a FullStackDeveopment.Here we are learning the project with the 
+            help of developing the clone of the web </p>
+            <div class="comment-section">
+                <img src="static//like.png" alt="">
+                <span>300</span>
+                <img src="static//dislike.jpg" alt="">
+                <span></span>
+                <span>Reply</span>
+                <a href="#">All Replies</a>
+            </div>
+    </div>
+
+        </div>
+        <div class="old-comments">
+            <img src="static//vijay.jpg" alt="">
+            <div>
+            <h3>Gerand <span> 3days ago</span></h3>
+            <p>This is a FullStackDeveopment.Here we are learning the project with the 
+                help of developing the clone of the web </p>
+                <div class="comment-section">
+                    <img src="static//like.png" alt="">
+                    <span>300</span>
+                    <img src="static//dislike.jpg" alt="">
+                    <span></span>
+                    <span>Reply</span>
+                    <a href="#">All Replies</a>
+                </div>
+        </div>
+    
+            </div>
+            <div class="old-comments">
+                <img src="static//vimal.jpg" alt="">
+                <div>
+                <h3>Gerand <span> 3days ago</span></h3>
+                <p>This is a FullStackDeveopment.Here we are learning the project with the 
+                    help of developing the clone of the web </p>
+                    <div class="comment-section">
+                        <img src="static//like.png" alt="">
+                        <span>300</span>
+                        <img src="static//dislike.jpg" alt="">
+                        <span></span>
+                        <span>Reply</span>
+                        <a href="#">All Replies</a>
+                    </div>
+            </div>
+        
+                </div>
+    </section>   
+    <section class="right-sidebar">
+        <div class="cont">
+            <div>
+                <img src="static//beach.jpg" alt="" width="150%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>This is a FullStack Deveopment Course</h5>
+                <p>Happy Students</p>
+                <p>1m views &bull; 2days ago</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+                <img src="static//sea1.webp" alt="" width="135%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>This is a FullStack Deveopment Course</h5>
+                <p>Happy Students</p>
+                <p>1m views &bull; 2days ago</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+               <img src="static//leaves.jpg" alt="" width="135%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>{{datas.description}}</h5>
+                <p>{{datas.channel}}</p>
+                <p>{{datas.views}}</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+                <img src="static//beach.jpg" alt="" width="150%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>This is a FullStack Deveopment Course</h5>
+                <p>Happy Students</p>
+                <p>1m views &bull; 2days ago</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+                <img src="static//sea1.webp" alt="" width="135%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>This is a FullStack Deveopment Course</h5>
+                <p>Happy Students</p>
+                <p>1m views &bull; 2days ago</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+               <img src="static//leaves.jpg" alt="" width="135%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>{{datas.description}}</h5>
+                <p>{{datas.channel}}</p>
+                <p>{{datas.views}}</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+                <img src="static//beach.jpg" alt="" width="150%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>This is a FullStack Deveopment Course</h5>
+                <p>Happy Students</p>
+                <p>1m views &bull; 2days ago</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+                <img src="static//sea1.webp" alt="" width="135%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>This is a FullStack Deveopment Course</h5>
+                <p>Happy Students</p>
+                <p>1m views &bull; 2days ago</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+               <img src="static//leaves.jpg" alt="" width="135%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>{{datas.description}}</h5>
+                <p>{{datas.channel}}</p>
+                <p>{{datas.views}}</p>
+            </div>
+        </div>
+        
+    </section>
+
+</div>
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

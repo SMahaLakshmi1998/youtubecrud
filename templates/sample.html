@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/home.css"> 
+    
+    <title>YOUTUBE UI</title>
+    
+</head>
+
+<body>
+    
+    <script src="home.js"></script>
+
+    <nav class="flex-div">
+    <div class="nav-left flex-div">
+        <img src="/static/3line.jpg" class="menu-icon">
+        <img src="/static/youtube.jpg" class="logo">
+
+    </div>
+    <div class="nav-middle flex-div">
+        <div class="search-box">
+            <input type="text" placeholder="search">
+            <img src="/static/magnifier.jpg" alt="">
+        </div>
+        <img src="/static/mic.jpg" class="mic-icon">
+    </div>
+    <div class="nav-right flex-div">
+        <img src="/static/video.jpg" >
+        <img src="/static/saveimage.jpg">
+        <img src="/static/bell.jpg" >
+        <img src="/static/men.png" class="user-icon">
+    </div>
+</nav>
+    <div class="sidebar small-sidebar">
+        <div class="shortcut-links">
+         <a href="a"><img src="/static/home.png"><p>Home</p></a><br>
+         <a href="a"><img src="/static/fire.png"><p>Explore</p></a><br>
+         <a href="a"><img src="/static/subscription.png"><p>Subscriptions</p></a><br>
+         <a href="a"><img src="/static/library.png"><p>Library</p></a><br>
+         <a href="a"><img src="/static/history.png"><p>History</p></a><br>
+         <a href="a"><img src="/static/messages.png"><p>Messages</p></a><br>
+         <a href="a"><img src="/static/showmore.png"><p></p>Showmore</p></a><br>
+         <hr>
+         </div>
+        <div class="subscribed-list">
+            <h3>Subscribed</h3>
+            <a href="a"><img src="/static/men.png">Python</a><br>
+            <a href="a"><img src="/static/men.png">Java</a><br>
+            <a href="a"><img src="/static/men.png">JavaScript</a><br>
+            <a href="a"><img src="/static/men.png">React</a><br>
+            <a href="a"><img src="/static/men.png">C</a><br>
+            <a href="a"><img src="/static/men.png">c++</a><br>
+       </div>
+    </div>
+<div class="container large-container">
+    <div class="banner">
+        <img src="/static/sea1.webp">
+    </div>
+    <div class="list_container">
+
+    {%for i in datas%}
+   
+       <div class="vid-last">
+            <a href="/video{{i.id}}"><img src="{{i.thumbnail}}" alt="" width="70%" ></a>
+            <div class="flex-div">
+                <a href=""><img src="{{i.photos}}" alt="" width="10%"></a>
+                <div class="vid-info">
+                    <h4>{{i.description}}</h4>
+                    <p>{{i.views}}</p>
+                    <p>{{i.channel}}</p>
+                    <p>{{i.uploaded}}</p>
+                </div>
+            </div>
+       </div>
+   {%endfor%}
+   </div>
+</div>
+</body>
+</html>
+
+
+
